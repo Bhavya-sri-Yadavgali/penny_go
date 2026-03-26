@@ -77,7 +77,7 @@ class TrendsLineChart extends StatelessWidget {
     final label = DateFormat('MMM').format(date);
 
     return SideTitleWidget(
-      axisSide: meta.axisSide,
+      meta: meta,
       child: Text(label, style: style),
     );
   }

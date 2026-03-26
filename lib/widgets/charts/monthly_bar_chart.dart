@@ -70,7 +70,7 @@ class MonthlyBarChart extends StatelessWidget {
     final label = DateFormat('MMM').format(date);
 
     return SideTitleWidget(
-      axisSide: meta.axisSide,
+      meta: meta,
       space: 16,
       child: Text(label, style: style),
     );
