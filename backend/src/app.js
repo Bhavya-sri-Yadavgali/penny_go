@@ -35,6 +35,20 @@ const authLimiter = rateLimit({
 app.use('/api', generalLimiter);
 app.use('/api/auth', authLimiter);
 
+// Root Welcome Route
+app.get('/', (req, res) => {
+  res.status(200).send(`
+    <style>body { font-family: sans-serif; text-align: center; padding: 50px; background: #f4f4f9; color: #333; }</style>
+    <div style="max-width: 600px; margin: auto; padding: 40px; background: white; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);">
+      <h1 style="color: #6366f1;">Penny Go API is Live! 🚀</h1>
+      <p style="font-size: 1.1em;">The backend is running successfully and is ready to handle your financial data.</p>
+      <div style="margin-top: 30px;">
+        <a href="/api/health" style="display: inline-block; padding: 12px 24px; background: #6366f1; color: white; text-decoration: none; border-radius: 8px; font-weight: bold;">Check API Health</a>
+      </div>
+    </div>
+  `);
+});
+
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/categories', categoryRoutes);
