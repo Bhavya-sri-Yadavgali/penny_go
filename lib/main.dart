@@ -50,7 +50,7 @@ class MyApp extends ConsumerWidget {
         ),
         useMaterial3: true,
       ),
-      routerConfig: AppRouter.router,
+      routerConfig: router,
     );
   }
 }

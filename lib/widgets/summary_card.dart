@@ -20,7 +20,7 @@ class SummaryCard extends StatelessWidget {
     final currencyFormat = NumberFormat.currency(symbol: '₹', decimalDigits: 0);
 
     // Color logic
-    Color statusColor = Colors.emerald; // Default Safe
+    Color statusColor = const Color(0xFF10B981); // Emerald Safe
     if (percent >= 0.9) {
       statusColor = Colors.redAccent;
     } else if (percent >= 0.7) {

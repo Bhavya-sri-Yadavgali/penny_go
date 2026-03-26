@@ -20,7 +20,7 @@ class TrendsLineChart extends StatelessWidget {
             bottomTitles: AxisTitles(
               sideTitles: SideTitles(
                 showTitles: true,
-                _getBottomTitles,
+                getTitlesWidget: _getBottomTitles,
                 reservedSize: 22,
                 interval: 2,
               ),

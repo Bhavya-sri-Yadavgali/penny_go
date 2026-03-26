@@ -3,6 +3,7 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:intl/intl.dart';
 import '../providers/category/category_provider.dart';
 import '../providers/expense/expense_provider.dart';
+import '../providers/budget/budget_provider.dart';
 import '../widgets/app_button.dart';
 import '../widgets/app_text_field.dart';
 

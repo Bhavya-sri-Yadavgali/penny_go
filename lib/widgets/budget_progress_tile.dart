@@ -13,7 +13,7 @@ class BudgetProgressTile extends StatelessWidget {
     final remaining = budget.limitAmount - (budget.spentAmount ?? 0);
     final currencyFormat = NumberFormat.currency(symbol: '₹', decimalDigits: 0);
 
-    Color statusColor = Colors.emerald;
+    Color statusColor = const Color(0xFF10B981);
     if (percent >= 0.9) {
       statusColor = Colors.redAccent;
     } else if (percent >= 0.7) {

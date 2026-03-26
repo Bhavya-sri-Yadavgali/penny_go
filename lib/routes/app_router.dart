@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../screens/login_screen.dart';
 import '../screens/register_screen.dart';
 import '../screens/dashboard_screen.dart';
 import '../screens/expense_list_screen.dart';
 import '../screens/analytics_screen.dart';
 import '../screens/budget_settings_screen.dart';
+
+final appRouterProvider = Provider((ref) => AppRouter.router);
 
 class AppRouter {
   static final _rootNavigatorKey = GlobalKey<NavigatorState>();
