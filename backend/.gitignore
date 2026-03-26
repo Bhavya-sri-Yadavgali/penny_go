@@ -1,0 +1,15 @@
+# Node.js dependencies
+node_modules/
+
+# Environment variables
+.env
+.env.example
+
+# User uploaded assets (Developer images, etc.)
+uploads/
+
+# Build and OS files
+dist/
+build/
+.DS_Store
+npm-debug.log
